@@ -1,0 +1,90 @@
+body, ul{
+    margin:  0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+li{
+    list-style: none;   
+}
+header{
+    border-bottom: 2px solid #172533;
+    margin: 10px;
+    
+}
+#header-wrap{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+#logo img{
+    width: 100px;
+    height: 100px;
+}
+header ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header ul li a{
+    display: flex;
+    padding: 10px 15px;
+    margin: 5px;
+    background: rgb(63, 89, 122);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 20px;
+    display: block;
+}
+header ul li a:hover{
+    background: lightblue;
+}
+
+#select{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+#search{
+    flex-direction: row;
+    justify-content: flex-end;
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+   }
+#button{
+    background: rgb(63, 89, 122);
+    color: white;
+    border-radius: 10px;
+   }
+#button2{
+    background: rgb(63, 89, 122);
+    color: white;
+    border-radius: 10px;
+}
+#button:hover{
+    background: lightblue;
+}
+#button2:hover{
+    background: lightblue;
+}
+
+@media (max-width: 800px) {
+    header ul {
+      width: 100%;
+    }
+    header ul li, #logo {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+     
