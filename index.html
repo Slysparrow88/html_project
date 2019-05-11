@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Webpage</title>
-        <meta charset="UTF-8"/>
-        <link rel="stylesheet" href="Style.css">
-    </head>
-    <body>
-        <header>
-            <div id="header-wrap">
+
+<head>
+    <title>Webpage</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="Style.css">
+    <base target="_self">
+</head>
+
+<body>
+    <header>
+        <div id="header-wrap">
             <div id="logo"><img src="CoDWaW.ico"></div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Gallary</a></li>
-                <li><a href="#">Contacts</a></li>
-                <li><a href="#">About us</a></li>
+                <li><a href="#">Домашняя</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                <li><a href="#">Про нас</a></li>
             </ul>
-        </header>
+    </header>
+    <div class="my">
         <div id="select">
             <select>
                 <option>Выберете продукт...</option>
@@ -23,11 +27,60 @@
                 <option>Процессоры</option>
                 <option>ОЗУ</option>
                 <option>Сетевые адаптеры</option>
-            <input id="button2" type="submit" value="Найти">
-            </select></div>
+                <input id="button2" type="submit" value="Найти">
+            </select>
+        </div>
         <div id="search">
-            <input size="20" type="search" name="q" placeholder="Поиск по сайту"> 
-            <input id="button" type="submit" value="Найти"></div>my
-        </form>
-    </body>
-</html> 
+            <input size="20" type="search" name="q" placeholder="Поиск по сайту">
+            <input id="button" type="submit" value="Найти"></div>
+    </div>
+    <div id="blockmenu">
+        <ul class="menu">
+            <li><a href="#">Ноутбуки</a>
+             <ul> 
+              <li><a href="#">Aser</a></li> 
+              <li><a href="#">Asus</a></li> 
+              <li><a href="#">Dell</a></li> 
+              <li><a href="#" class="brd">Macbook</a></li> 
+             </ul> 
+            </li> 
+            <li><a href="#">Смартфоны</a> 
+             <ul> 
+              <li><a href="#">Apple</a></li> 
+              <li><a href="#">Huawei</a></li> 
+              <li><a href="#">LG</a></li> 
+              <li><a href="#" class="brd">Samsung</a></li> 
+             </ul> 
+            </li>
+            <li><a href="#">Дополнительно</a> 
+             <ul> 
+              <li><a href="#">Батареи</a></li> 
+              <li><a href="#">Зарядные устройства</a></li> 
+              <li><a href="#">Защитные стекла</a></li> 
+              <li><a href="#" class="brd">Чехлы</a></li> 
+             </ul> 
+        </ul>
+        <div id="rightmenu">
+                <ul>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">Акции</a></li>
+                </ul>
+                <br>
+                <div id="links">
+                    <ul>
+                    <li><a id="links" href="#"><br> 
+                        <img src="ПО.jpg" alt="ПО">Установка ПО</a></li>
+                    <li><a id="links" href="#"><br> 
+                        <img src="remont-monitorov.jpg" alt="ПО">Ремонт мониторов</a></li>
+                    <li><a id="links" href="#"><br> 
+                        <img src="accessories.jpg" alt="ПО">Аксессуары</a></li>
+                        <li><a id="links" href="#"><br> 
+                            <img src="computer-peripheral.png" alt="ПО">Периферийные устройства</a></li>    
+                    </ul>
+                </div>
+        </div>
+    </div>
+  </body>
+
+</html>
