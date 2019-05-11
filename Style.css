@@ -3,13 +3,13 @@ body, ul{
     padding: 0;
     flex-wrap: wrap;
 }
-.my{
+/* .my{
     display: flex;
     max-width: 800px;
     margin: auto;
     flex-wrap: wrap;
-    /* justify-content: flex-start; */
-}
+   
+} */
 li{
     list-style: none;   
 }
@@ -27,6 +27,7 @@ header{
 #logo img{
     width: 100px;
     height: 100px;
+
 }
 header ul{
     display: flex;
@@ -49,7 +50,8 @@ header ul li a{
 header ul li a:hover{
     background: lightblue;
 }
-#rightmenu #links{
+
+/* #rightmenu #links{
     background: white;
     font-size: 15px;
     padding: 0;
@@ -66,7 +68,7 @@ header ul li a:hover{
     flex-direction: row;
     justify-content: flex-start;
     max-width: 800px;
-    /* margin: auto; */
+   
     padding: 0px 0px 0px 0px; 
     flex-wrap: wrap;
 }
@@ -74,8 +76,7 @@ header ul li a:hover{
     width: 211.95px;
     display: flex;
     flex-wrap: wrap;
-    /* padding: 0px 150px 0px 0px; */
-    border: 1px solid rgb(63, 89, 122); 
+     border: 1px solid rgb(63, 89, 122); 
 }
 #rightmenu ul{
     width: 211.95px;
@@ -90,13 +91,13 @@ header ul li a:hover{
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
-    /* display: block; */
+    
 }
 #rightmenu ul li a:hover{
     text-decoration-line: underline;
 }
 #search{
-    /* flex-direction: row; */
+    
     justify-content: flex-end;
     max-width: 800px;
     padding: 0px 0px 0px 300px; 
@@ -130,7 +131,7 @@ header ul li a:hover{
 .menu{
     width: 800px;
     max-width: 800px;
-    /* margin: auto; */
+    
     padding: 0;
     flex-wrap: wrap;
     font-weight: bold;
@@ -140,46 +141,91 @@ header ul li a:hover{
     }
 
 .menu ul {
-    width: 140px; /* Ширина меню */
-    list-style: none; /* Для списка убираем маркеры */
-    margin: auto; /* Нет отступов вокруг */
-    padding: 0; /* Убираем поля вокруг текста */
-    font-family: Arial, sans-serif; /* Рубленый шрифт для текста меню */
-    font-size: 10pt; /* Размер названий в пункте меню */
+    width: 140px; 
+    list-style: none; 
+    margin: auto; 
+    padding: 0; 
+    font-family: Arial, sans-serif; 
+    font-size: 10pt; 
    }
 .menu li ul {
-    position: absolute; /* Подменю позиционируются абсолютно */
-    display: none; /* Скрываем подменю */
-    margin-left: 130px; /* Сдвигаем подменю вправо */
-    margin-top: -2em; /* Сдвигаем подменю вверх */
+    position: absolute; 
+    display: none; 
+    margin-left: 130px; 
+    margin-top: -2em; 
    }
 .menu li a {
-    display: block; /* Ссылка как блочный элемент */
-    padding: 5px; /* Поля вокруг надписи */
-    text-decoration: none; /* Подчеркивание у ссылок убираем */
-    color: rgb(63, 89, 122); /* Цвет текста */
-    border: 1px solid #ccc;/* Рамка вокруг пунктов меню */
-    background-color: #f0f0f0; /* Цвет фона */
-    border-bottom: none; /* Границу снизу не проводим */
+    display: block;
+    padding: 5px; 
+    text-decoration: none; 
+    color: rgb(63, 89, 122); 
+    border: 1px solid #ccc;
+    background-color: #f0f0f0; 
+    border-bottom: none; 
    }
 .menu li a:hover {
-    color: #ffe; /* Цвет текста активного пункта */
-    background-color: #5488af; /* Цвет фона активного пункта */
+    color: #ffe; 
+    background-color: #5488af; 
    }
 .menu li:hover ul { 
-    display: block; /* При выделении пункта курсором мыши отображается подменю */
+    display: block; 
    }
 .menu .brd {
-    border-bottom: 1px solid #ccc; /* Линия снизу */
-   }
+    border-bottom: 1px solid #ccc; 
+   } */
 
+            /*Contant  styles*/
+#content-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin:auto;
+}
+#content{
+    width: 70%;
+    padding: 15px 15px 15px 0;
+}
+#sidebar{
+    width: 30%;
+    padding: 15px 0 15px 15px;
+}
+.border{
+    box-shadow: 0 0 3px 2px black;
+    padding: 15px;
+    min-height: 600px;
+}
+#content, #sidebar{
+    box-sizing: border-box; 
+}
+#gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+#gallery .article{
+    width: 50%;
+}
+#gallery img{
+    max-width: 100%;
+    
+}
+#gallery .article-wrap{
+    margin: 15px;
+    padding: 10px;
+    box-shadow: 0 0 6px 3px rgb(124, 150, 206);
+    text-align: center;
+}
+#gallery .article-wrap h4{
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    text-align: center;
+}
 @media (max-width: 800px) {
     header ul {
       width: 100%;
     }
     header ul li, #logo {
       width: 100%;
-      text-align: center;
     }
   }
 
