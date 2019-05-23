@@ -238,7 +238,16 @@ header ul li a:hover{
     margin-left: 10px;
     transition: 0.7s;
 }
-
+footer{
+    background: #172533;
+    text-align: center;
+    padding: 15px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+}
 @media (max-width: 1060px) {
     #content-wrap{
         margin: 0 15px 0 15px;
